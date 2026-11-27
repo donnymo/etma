@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ресторан «Этма» — это стильное городское бистро с уютным интерьером в тёплых тонах и панорамными окнами, из которых открывается прекрасный вид на набережную Чёрной речки.">
+  <meta name="theme-color" content="#24201a">
+  <title>Э́ТМА | Городское бистро</title>
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+  <link rel="preload" href="assets/Manrope.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="wheel-scroll.js"></script>
+  <script defer src="food-gallery.js"></script>
+</head>
+<body>
+  <main>
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <video class="hero-video" poster="assets/poster.jpg" preload="auto" autoplay muted loop playsinline aria-hidden="true">
+        <source src="assets/hero-loop.mp4" type="video/mp4">
+      </video>
+      <header class="hero-header">
+        <h1 class="hero-logo" id="hero-title" lang="ru">
+          <img src="assets/etma-wordmark.webp" width="1635" height="579" alt="Этма">
+        </h1>
+      </header>
+      <a class="wander" href="#locations" aria-label="Перейти к адресу" lang="ru">
+        <img src="assets/chevron.svg" width="41" height="21" alt="">
+      </a>
+    </section>
+    <section class="locations" id="locations" aria-labelledby="locations-title" tabindex="-1">
+      <div class="locations-inner">
+        <div class="locations-intro">
+          <div class="locations-details" lang="ru">
+            <h2 id="locations-title">ждём <br>тебя</h2>
+            <div class="locations-contact">
+              <address class="locations-address">
+                <span>наб. Чёрной речки, 35</span>
+                <span>Санкт-Петербург</span>
+              </address>
+              <dl class="locations-contact-info">
+                <div>
+                  <dt>Часы работы</dt>
+                  <dd>9:00–23:00</dd>
+                </div>
+                <div>
+                  <dt>Бронирование по телефону</dt>
+                  <dd><a href="tel:+79213293282">+7 (921) 329-32-82</a></dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+          <div class="locations-photo">
+            <img src="assets/locations-entrance.webp" width="960" height="1280" alt="Вход в кафе «Этма» со светящейся вывеской" lang="ru" decoding="async">
+          </div>
+        </div>
+      </div>
+      <div class="locations-gallery">
+        <img src="assets/locations-interior.webp" width="853" height="1280" alt="Wooden café tables beside a deep red tiled wall" decoding="async">
+        <img src="assets/locations-espresso.webp" width="853" height="1280" alt="Red espresso machine with cups and a bag of filter coffee" decoding="async">
+        <img src="assets/locations-counter.webp" width="959" height="1278" alt="Длинный деревянный стол и кофейная стойка в зале «Этмы»" lang="ru" decoding="async">
+      </div>
+    </section>
+    <section class="food" id="food" aria-labelledby="food-title" lang="ru">
+      <div class="food-inner">
+        <h2 id="food-title">завтраки / выпечка / кофе / еда / вино</h2>
+        <div class="food-gallery">
+          <button class="food-photo" type="button" aria-label="Сменить фото завтрака и сырников" aria-pressed="false">
+            <img src="assets/menu-breakfast.webp" width="960" height="1280" alt="Завтрак с яйцом, беконом, колбаской и тостом" decoding="async">
+            <img class="food-photo-alternate" src="assets/gallery-syrniki.webp" width="960" height="1280" alt="Сырники с кремом и ягодным соусом" loading="lazy" decoding="async">
+          </button>
+          <button class="food-photo" type="button" aria-label="Сменить фото выпечки" aria-pressed="false">
+            <img src="assets/menu-pastries.webp" width="960" height="1280" alt="Свежая выпечка с черникой, кремом и маком" decoding="async">
+            <img class="food-photo-alternate" src="assets/gallery-pastries.webp" width="853" height="1280" alt="Четыре вида выпечки на бордовой тарелке" loading="lazy" decoding="async">
+          </button>
+          <button class="food-photo" type="button" aria-label="Сменить фото тартара и бургера" aria-pressed="false">
+            <img src="assets/menu-tartare.webp" width="960" height="1280" alt="Тартар с гренкой и зелёным луком" decoding="async">
+            <img class="food-photo-alternate food-photo-burger" src="assets/gallery-burger.webp" width="1280" height="853" alt="Бургер с картофелем фри" loading="lazy" decoding="async">
+          </button>
+          <button class="food-photo" type="button" aria-label="Сменить фото вина и коктейля" aria-pressed="false">
+            <img src="assets/menu-wine.webp" width="985" height="1280" alt="Бутылки игристого вина в чаше со льдом" decoding="async">
+            <img class="food-photo-alternate" src="assets/gallery-drinks.jpg" width="1536" height="2048" alt="Коктейль с оливками и бокал белого вина" loading="lazy" decoding="async">
+          </button>
+        </div>
+        <a class="food-menu-link" href="menu.html">МЕНЮ</a>
+      </div>
+    </section>
+  </main>
+  <footer class="contacts" id="contacts" aria-labelledby="contacts-title" lang="ru">
+    <div class="contacts-inner">
+      <h2 id="contacts-title">контакты</h2>
+      <div class="contacts-booking">
+        <p>бронирование по телефону: <a href="tel:+79213293282" draggable="false">+7 (921) 329-32-82</a></p>
+        <div class="contacts-socials">
+          <span class="contacts-social" role="img" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.4" cy="6.7" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </span>
+          <span class="contacts-social" role="img" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M15 10l-4 4l6 6l4-16l-18 7l4 2l2 6l3-4"/>
+            </svg>
+          </span>
+        </div>
+      </div>
+      <small class="contacts-copyright">© э́тма — все права защищены</small>
+    </div>
+  </footer>
+</body>
+</html>

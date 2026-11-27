@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ead3b8">
+  <title>Меню | Э́ТМА</title>
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+  <link rel="preload" href="assets/Manrope.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="wheel-scroll.js"></script>
+  <script defer src="menu-viewer.js"></script>
+</head>
+<body class="menu-page">
+  <main class="menu-content">
+    <a href="index.html#food">На главную</a>
+    <h1>МЕНЮ</h1>
+    <div class="menu-sheets">
+      <a href="assets/menu.webp" aria-label="Открыть основное меню в полном размере">
+        <img src="assets/menu.webp" width="911" height="1280" alt="Основное меню" decoding="async">
+      </a>
+      <a href="assets/menu1.webp" aria-label="Открыть меню завтраков в полном размере">
+        <img src="assets/menu1.webp" width="911" height="1280" alt="Завтраки" decoding="async">
+      </a>
+      <a href="assets/menu3.webp" aria-label="Открыть меню напитков в полном размере">
+        <img src="assets/menu3.webp" width="911" height="1280" alt="Напитки" decoding="async">
+      </a>
+      <a href="assets/menu2.webp" aria-label="Открыть винную карту в полном размере">
+        <img src="assets/menu2.webp" width="911" height="1280" alt="Вино и крепкие напитки" decoding="async">
+      </a>
+    </div>
+  </main>
+  <footer class="contacts" id="contacts" aria-labelledby="contacts-title" lang="ru">
+    <div class="contacts-inner">
+      <h2 id="contacts-title">контакты</h2>
+      <div class="contacts-booking">
+        <p>бронирование по телефону: <a href="tel:+79213293282" draggable="false">+7 (921) 329-32-82</a></p>
+        <div class="contacts-socials">
+          <span class="contacts-social" role="img" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.4" cy="6.7" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </span>
+          <span class="contacts-social" role="img" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M15 10l-4 4l6 6l4-16l-18 7l4 2l2 6l3-4"/>
+            </svg>
+          </span>
+        </div>
+      </div>
+      <small class="contacts-copyright">© э́тма — все права защищены</small>
+    </div>
+  </footer>
+  <dialog class="menu-viewer" aria-label="Просмотр меню">
+    <form class="menu-viewer-controls" method="dialog">
+      <button class="menu-viewer-zoom-out" type="button" aria-label="Уменьшить меню" aria-disabled="true">−</button>
+      <button class="menu-viewer-zoom-in" type="button" aria-label="Увеличить меню">+</button>
+      <button type="submit" aria-label="Закрыть меню" autofocus>×</button>
+    </form>
+    <div class="menu-viewer-scroll" role="region" aria-label="Лист меню" tabindex="-1">
+      <div class="menu-viewer-sheet">
+        <img class="menu-viewer-image" alt="">
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
